@@ -1,0 +1,48 @@
+body {
+    overflow: hidden;
+}
+
+/* Repeated Values */
+
+header, #main, .left-side {
+    display: flex;
+}
+
+header{
+    justify-content: space-between;
+}
+
+.links {
+    height: 50px
+}
+
+.profile {
+    background-color: black;
+    border-radius: 50%;
+}
+
+#main {
+    justify-content: space-around;
+    height: 80vh;
+}
+.left-side {
+    width: 40vw;
+    flex-direction: column;
+    
+}
+#pokemon-image {
+    max-width: 250px;
+    height: auto;
+}
+
+table {
+    background-color: aqua;
+}
+
+tr {
+    padding: 1px;
+}
+th {
+    padding: 1px;
+
+}
