@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéDex</title>
+    <link rel="icon" type="image/x-icon" href="/pokemon-icon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <h1>PokéDex</h1>
+         <form >
+            <input type="text" name="user-choice" id="user-choice"> <button id="lets-go" onclick="getPokemon()" type="button">lets go</button>
+         </form>
+        <div class="links">
+            <a href="https://github.com/b00541" ><img class="links profile" src="/github-mark-white.png"  alt="github link"></a>
+            <a href="https://pokeapi.co/" ><img       class="links" src="/pokeapi_logo.png" alt="github link"></a>
+        </div>    
+        </nav>
+    </header>
+    <main>
+        <section id="pokidex-body">
+            <div id="top">
+            </div>
+            
+            <div id="main">
+                <div class="left-side">
+                    <img src="" id="pokemon-image" alt="">
+                    <span class="pokemon-name"></span><span class="pokemon-number"></span>
+                </div>
+
+                <div class="right-side">
+                    <div class="stats">
+                        <span class="height"></span>
+                        <span class="weight"></span>
+                        <span class="type"></span>
+                        <span class="abilities"></span>
+                        <span class="abilities2"></span>
+                    </div>
+                    <div class="base-stats">
+                        <table>
+                            <tr>
+                                <th class="bHP">HP</th>
+                                <th class="bAttack">Attack</th>
+                                <th class="bDefense">Defense</th>
+                                <th class="bSAttack">Special<br>Attack</th>
+                                <th class="bSDefense">Special<br>Defense</th>
+                                <th class="bSpeed">Speed</th>
+                            </tr>
+                            <tr>
+                                <th class="num-bHP"></th>
+                                <th class="num-bAttack"></th>
+                                <th class="num-bDefense"></th>
+                                <th class="num-bSAttack"></th>
+                                <th class="num-bSDefense"></th>
+                                <th class="num-bSpeed"></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+<script src="pokemon.js"></script>
+</body>
+</html>
