@@ -25,6 +25,10 @@ header{
     justify-content: space-around;
     height: 80vh;
 }
+#pokedex-body {
+    background: red;
+}
+
 .left-side {
     width: 40vw;
     flex-direction: column;
