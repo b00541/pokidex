@@ -44,20 +44,26 @@ async function getPokemon() {
     let data = await fetch(`https://pokeapi.co/api/v2/pokemon/${userPokemon}/`)
     let response = await data.json()
     console.log(response)
-    pokemonName.textContent = response.name
+    //Name
+    pokemonName.textContent   = response.name
+    //Number
     pokemonNumber.textContent = "#" + response.id
-    pokemonImage.src = response.sprites.front_default
-    height.textContent = response.height + "m"
-    weight.textContent = response.weight + "kg"
-    type.textContent = response.types[0].type.name
-    ability.textContent = response.abilities[0].ability.name
-    ability2.textContent = response.abilities[1].ability.name
-    hitpoint.textContent = response.stats[0].base_stat
-    attack.textContent = response.stats[1].base_stat
-    defense.textContent = response.stats[2].base_stat
-    sAttack.textContent = response.stats[3].base_stat
-    sDefense.textContent = response.stats[4].base_stat
-    speed.textContent = response.stats[5].base_stat
+    //Pic
+    pokemonImage.src          = response.sprites.front_default
+    //Stats
+    height.textContent        = response.height + "m"
+    weight.textContent        = response.weight + "kg"
+    type.textContent          = response.types[0].type.name
+    //Abilities 
+    ability.textContent       = response.abilities[0].ability.name
+    ability2.textContent      = response.abilities[1].ability.name
+    //Base Stats
+    hitpoint.textContent      = response.stats[0].base_stat
+    attack.textContent        = response.stats[1].base_stat
+    defense.textContent       = response.stats[2].base_stat
+    sAttack.textContent       = response.stats[3].base_stat
+    sDefense.textContent      = response.stats[4].base_stat
+    speed.textContent         = response.stats[5].base_stat
   
   }
 
