@@ -50,6 +50,7 @@ async function getPokemon() {
     pokemonNumber.textContent = "#" + response.id
     //Pic
     pokemonImage.src          = response.sprites.front_default
+    pokemonImage.alt          = 'picture of: ' + response.name
     //Stats
     height.textContent        = response.height + "m"
     weight.textContent        = response.weight + "kg"
